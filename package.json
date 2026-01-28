@@ -1,0 +1,25 @@
+{
+  "name": "typescriptfeaturesw2",
+  "version": "1.0.0",
+  "description": "union types, interfaces ,enums and generics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonalMahe/TypescriptFeaturesW2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SonalMahe/TypescriptFeaturesW2/issues"
+  },
+  "homepage": "https://github.com/SonalMahe/TypescriptFeaturesW2#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
