@@ -1,12 +1,49 @@
 //interfaces
 
-//1.
-interface Book{
-    title:string;
-    pages:number;
-}
+//1.Book Interfaces-
 
-const describeBook=(book:Book) =>{
+interface Book {
+    title: string;
+    pages: number;
+}
+const describeBook = (book: Book) => {
     console.log(`The ${book.title} has ${book.pages} pages.`)
 }
-describeBook("harry potter");
+describeBook({
+    title: "Harry Potter",
+    pages: 500
+});
+
+
+//2.Create two interfaces-
+
+interface Teacher {
+    name: string;
+    subject: string;
+};
+interface Employee {
+    id?: number;
+    email: string;
+}
+type SchoolTeacher = Teacher & Employee;
+const printTeacherInfo = (teacher: SchoolTeacher) => {
+    console.log(`The teacher name is: ${teacher.name},Email ID is: ${teacher.email} and Subject she teaches ${teacher.subject}`);
+}
+printTeacherInfo({
+    name: "Sonal",
+    email: "sonal@gamil.com",
+    subject: "Maths and Science."
+});
+
+//3. Car-
+interface Car {
+    brand: string;
+    year: number
+}
+const printCar =(car: Car)=>{
+    console.log(`The brand of car is :${car.brand} and model year :${car.year}`);
+}
+printCar({
+    brand :"Polestar",
+    year :2025
+})
