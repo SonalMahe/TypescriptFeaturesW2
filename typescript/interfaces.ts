@@ -31,7 +31,8 @@ const printTeacherInfo = (teacher: SchoolTeacher) => {
         `. Her ID :- ` + teacher.id,
         `.  Email ID :- ` + teacher.email,
         `.  Subject she teaches:- ` + teacher.subject);
-}
+};
+
 printTeacherInfo({
     name: "Sonal",
     id: 9,
