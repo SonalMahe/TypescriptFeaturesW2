@@ -5,6 +5,7 @@ const wrapInArray = <T> (input:T): T[] => {
  return [input];
 };
 console.log(wrapInArray("cat"));
+console.log(wrapInArray(5));
 
 
 
