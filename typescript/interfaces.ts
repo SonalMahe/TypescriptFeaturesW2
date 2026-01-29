@@ -10,8 +10,8 @@ const describeBook = (book: Book) => {
     console.log(`The ${book.title} has ${book.pages} pages.`)
 }
 describeBook({
-    title: "Harry Potter",
-    pages: 500
+    title: "GAME OF THRONES",
+    pages: 550
 });
 
 
