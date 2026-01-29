@@ -40,10 +40,10 @@ interface Car {
     brand: string;
     year: number
 }
-const printCar =(car: Car)=>{
+const printCar = (car: Car) => {
     console.log(`The Car brand :${car.brand} and model year :${car.year}`);
 }
 printCar({
-    brand :"Polestar",
-    year :2025
+    brand: "Polestar",
+    year: 2025
 })

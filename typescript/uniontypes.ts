@@ -22,8 +22,7 @@ type Result = true | false;
 const printResult = (print: Result) => {
     if (print) {
         console.log("PASS");
-    } else 
-    {
+    } else {
         console.log("FAIL");
     };
 };
