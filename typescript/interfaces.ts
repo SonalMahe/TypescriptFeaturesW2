@@ -22,18 +22,24 @@ interface Teacher {
     subject: string;
 };
 interface Employee {
-    id?: number;
+    id: number;
     email: string;
 }
 type SchoolTeacher = Teacher & Employee;
 const printTeacherInfo = (teacher: SchoolTeacher) => {
-    console.log(`The teacher name is: ${teacher.name},Email ID is: ${teacher.email} and Subject she teaches ${teacher.subject}`);
+    console.log(`The teacher name is:- ` + teacher.name,
+        `. Her ID :- ` + teacher.id,
+        `.  Email ID :- ` + teacher.email,
+        `.  Subject she teaches:- ` + teacher.subject);
 }
 printTeacherInfo({
     name: "Sonal",
+    id: 9,
     email: "sonal@gamil.com",
     subject: "Maths and Science."
 });
+
+
 
 //3. Car-
 interface Car {
