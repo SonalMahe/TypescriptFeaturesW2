@@ -7,7 +7,7 @@ interface Book {
     pages: number;
 }
 const describeBook = (book: Book) => {
-    console.log(`The ${book.title} has ${book.pages} pages.`)
+    console.log(`The ` + book.title + ` has `+  book.pages + ` pages.`)
 }
 describeBook({
     title: "GAME OF THRONES",
@@ -48,9 +48,9 @@ interface Car {
     year: number
 }
 const printCar = (car: Car) => {
-    console.log(`The Car brand :${car.brand} and model year :${car.year}`);
+    console.log(`The Car brand:- ${car.brand} and Model Year:- ${car.year}`);
 }
 printCar({
     brand: "Polestar",
-    year: 2025
+    year: 2025.
 })
