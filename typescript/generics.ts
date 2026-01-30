@@ -1,20 +1,21 @@
 // Generics ( <T> means reusable placeholder ) 
 // 1.
 
-const wrapInArray = <T> (input:T): T => {
- return input;
+const wrapInArray = <T> (input:T): T[] => {
+ return [input];
 };
 console.log(wrapInArray("cat"));
-console.log(wrapInArray(5));
+//console.log(wrapInArray(5));
 
 
 
 //2.
-const firstItem = <T> (array: T[]) : T | undefined =>{
-    return array[0];
+const firstItem = <T> (array: T) : T[] => {
+    return [array];
 }
+
 console.log(firstItem([2,3,4]));
-//console.log(firstItem("a","b","c"));
+//console.log(firstItem(["a","b","c"]));
 
 
 
